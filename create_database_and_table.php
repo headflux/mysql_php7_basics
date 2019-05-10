@@ -2,7 +2,7 @@
 
 //----------------------------------------------------------------------------
 // Create database
-$sql = "CREATE DATABASE myDB";
+$sql = "CREATE DATABASE program";
 if (mysqli_query($conn, $sql)) {
     echo "Database created successfully";
 } else {
@@ -11,7 +11,7 @@ if (mysqli_query($conn, $sql)) {
 
 //----------------------------------------------------------------------------
 // sql to create table
-$sql = "CREATE TABLE MyGuests (
+$sql = "CREATE TABLE Clients (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 firstname VARCHAR(30) NOT NULL,
 lastname VARCHAR(30) NOT NULL,
@@ -20,7 +20,7 @@ reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 )";
 
 if (mysqli_query($conn, $sql)) {
-    echo "Table MyGuests created successfully";
+    echo "Table Clients created successfully";
 } else {
     echo "Error creating table: " . mysqli_error($conn);
 }
