@@ -1,3 +1,5 @@
+<?php
+
 //----------------------------------------------------------------------------
 // Create database
 $sql = "CREATE DATABASE myDB";
@@ -22,3 +24,5 @@ if (mysqli_query($conn, $sql)) {
 } else {
     echo "Error creating table: " . mysqli_error($conn);
 }
+
+?>
